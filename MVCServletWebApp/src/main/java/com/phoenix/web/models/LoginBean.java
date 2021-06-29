@@ -1,0 +1,40 @@
+/* Author: bhargav.parmar@stltech.in
+ * Date: 27-06-2021
+ * Copyright: Sterlite Technology Ltd
+ * Version: 1.0.0
+ * */
+ 
+package com.phoenix.web.models;
+
+public class LoginBean {
+	
+	//Data members
+	private String username;
+	private String password;
+	
+	//Setters and getters
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getPassword() {
+		return password;
+	}
+	
+	//Bussiness logic method
+	public boolean isValid() {
+		if(username != null 
+				&& password != null
+				&& username.equals("Thomas")
+				&& password.equals("thomas12")) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+} //end of class
